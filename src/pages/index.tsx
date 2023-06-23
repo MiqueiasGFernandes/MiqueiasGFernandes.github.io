@@ -7,11 +7,14 @@ import { MainContainer } from "../components/main-container"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
+    <>
+    <title>Wesley Jr | Visual Effects Compositor and Motion Designer</title>
     <MainContainer>
       <Header />
       <MainContent />
       <Footer />
     </MainContainer>
+    </>
   )
 }
 
