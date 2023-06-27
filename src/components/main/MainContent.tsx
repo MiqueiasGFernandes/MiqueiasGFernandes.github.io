@@ -3,10 +3,20 @@ import ReactBeforeSliderComponent from 'react-node-before-after-slider-component
 import 'react-node-before-after-slider-component/dist/build.css';
 import './styles.css'
 
-import beforeImage from '../../images/slider_before.jpg';
-import afterImage from '../../images/slider_before.jpg';
+import frame1Before from '../../images/frame1_before.webp';
+import frame1After from '../../images/frame1_after.webp';
+import frame2Before from '../../images/frame2_before.webp';
+import frame2After from '../../images/frame2_after.webp';
+import frame3Before from '../../images/frame3_before.webp';
+import frame3After from '../../images/frame3_after.webp';
+import frame4Before from '../../images/slider_before.jpg';
+import frame4After from '../../images/slider_before.jpg';
+
+
 import projectImage1 from '../../images/project1.webp';
 import projectImage2 from '../../images/project2.webp';
+
+
 import avatar from '../../images/avatar.webp';
 import brazil from '../../images/brazil.png';
 import usa from '../../images/usa.png';
@@ -19,11 +29,36 @@ const MainContent: React.FC = () => {
 
   return (
     <main ref={mainElementRef} className='min-h-screen'>
-      <ReactBeforeSliderComponent
-        className='slider_content'
-        firstImage={{ imageUrl: beforeImage }}
-        secondImage={{ imageUrl: afterImage }}
-      />
+      <section className='grid grid-cols-1 md:grid-cols-2 gap-12'>
+        <div className='overflow-hidden'>
+          <ReactBeforeSliderComponent
+            className='slider_content'
+            firstImage={{ imageUrl: frame1Before }}
+            secondImage={{ imageUrl: frame1After }}
+          />
+        </div>
+        <div className='overflow-hidden'>
+          <ReactBeforeSliderComponent
+            className='slider_content'
+            firstImage={{ imageUrl: frame2Before }}
+            secondImage={{ imageUrl: frame2After }}
+          />
+        </div>
+        <div className='overflow-hidden'>
+          <ReactBeforeSliderComponent
+            className='slider_content'
+            firstImage={{ imageUrl: frame3Before }}
+            secondImage={{ imageUrl: frame3After }}
+          />
+        </div>
+        <div className='overflow-hidden'>
+          <ReactBeforeSliderComponent
+            className='slider_content'
+            firstImage={{ imageUrl: frame4Before }}
+            secondImage={{ imageUrl: frame4After }}
+          />
+        </div>
+      </section>
       <Projects
         projects={[
           {
@@ -82,7 +117,7 @@ const MainContent: React.FC = () => {
           }
         ]}
       />
-      
+
     </main >
   );
 }

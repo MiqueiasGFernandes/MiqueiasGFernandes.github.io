@@ -1,4 +1,12 @@
 .slider_content {
-  max-height: 75vh;
   overflow: hidden;
+  height: 100%
+}
+
+.slider_content img {
+  height: 100%;
+}
+
+.slider_content > div {
+  height: 100%;
 }

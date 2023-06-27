@@ -16,7 +16,7 @@ type AboutMeProps = {
 const AboutMe: React.FC<AboutMeProps> = ({ avatar, description, defaultLanguage }) => {
   const [language, setLanguage] = useState(defaultLanguage)
 
-  return <div className='grid md:grid-cols-4 mt-24 gap-4'>
+  return <div className='grid md:grid-cols-4 mt-24 gap-6'>
     <div className='avatar_content col-span-4 md:col-span-1'>
       <img src={avatar} alt="Wesley Junior" />
     </div>
