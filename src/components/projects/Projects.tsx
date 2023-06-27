@@ -18,7 +18,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 
   return <div className='mt-24 gap-4 grid grid-cols-1 md:grid-cols-2'>
     {projects.map((project) =>
-    <a href={project.link} title={project.title}>
+    <a href={project.link} title={project.title} target='_blank'>
       <div className={`project_content relative h-full`}>
         <div className='project_label absolute top-8 left-8 z-40'>
           <span className='project_title text-2xl font-semibold'>{project.title}</span>
