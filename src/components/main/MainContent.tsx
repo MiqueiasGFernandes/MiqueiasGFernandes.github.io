@@ -5,8 +5,9 @@ import './styles.css'
 
 import beforeImage from '../../images/slider_before.jpg';
 import afterImage from '../../images/slider_before.jpg';
-import projectImage from '../../images/project.jpg';
-import avatar from '../../images/avatar.jpeg';
+import projectImage1 from '../../images/project1.webp';
+import projectImage2 from '../../images/project2.webp';
+import avatar from '../../images/avatar.webp';
 import brazil from '../../images/brazil.png';
 import usa from '../../images/usa.png';
 
@@ -26,14 +27,22 @@ const MainContent: React.FC = () => {
       <Projects
         projects={[
           {
-            image: projectImage,
-            title: 'Project 1',
-            year: '2023'
+            image: {
+              src: projectImage1,
+              fit: 'contain'
+            },
+            title: 'Antarctica - At the intersection of technology and climate action',
+            year: '2022',
+            link: 'https://youtu.be/5-yae5axl00',
           },
           {
-            image: projectImage,
-            title: 'Project 2',
-            year: '2023'
+            image: {
+              src: projectImage2,
+              fit: 'none'
+            },
+            title: 'Reserva ad',
+            year: '2021',
+            link: 'https://www.instagram.com/reel/CRPc-qVJkDw/',
           }
         ]}
       />

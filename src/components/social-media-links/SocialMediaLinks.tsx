@@ -13,23 +13,23 @@ type SocialMediaLinkType = {
 const socialMediaLinks: SocialMediaLinkType[] = [
   {
     image: instagram,
-    label: 'Instagram',
-    url: '#',
+    label: 'Instagram | @wesleyspjr',
+    url: 'https://www.instagram.com/wesleyspjr/',
   },
   {
     image: linkedin,
-    label: 'Linkedin',
-    url: '#',
+    label: 'Linkedin | Wesley Junior',
+    url: 'https://www.linkedin.com/in/wesleyspjr/',
   },
   {
     image: youtube,
-    label: 'Youtube',
-    url: '#',
+    label: 'Youtube | @waedicoes1909',
+    url: 'https://www.youtube.com/@waedicoes1909',
   },
   {
     image: vimeo,
-    label: 'Vimeo',
-    url: '#',
+    label: 'Vimeo | Wesley Junior',
+    url: 'https://vimeo.com/user203058658',
   },
 ]
 

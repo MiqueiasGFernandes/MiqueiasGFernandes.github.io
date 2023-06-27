@@ -5,24 +5,30 @@ import "./styles.css";
 export type ProjectsProps = {
   projects: {
     title: string,
-    image: any,
+    image: {
+      src: any,
+      fit: string
+    },
     year: string
+    link: string
   }[]
 }
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 
-  return <div className='projects_container mt-24 gap-4 grid grid-cols-1 md:grid-cols-2'>
+  return <div className='mt-24 gap-4 grid grid-cols-1 md:grid-cols-2'>
     {projects.map((project) =>
-      <div className={`project_content relative `}>
+    <a href={project.link} title={project.title}>
+      <div className={`project_content relative h-full`}>
         <div className='project_label absolute top-8 left-8 z-40'>
-          <span className='project_title text-4xl font-semibold'>{project.title}</span>
+          <span className='project_title text-2xl font-semibold'>{project.title}</span>
           <span className='project_year text-lg font-extrabold'>{project.year}</span>
         </div>
-        <div className="img_content">
-          <img src={project.image} alt={`${project.title} - ${project.year}`} />
+        <div className="img_content shrink-0 h-full">
+          <img className={`w-full sm:h-full md:h-5/6 object-${project.image.fit}`} src={project.image.src} alt={`${project.title} - ${project.year}`} />
         </div>
       </div>
+    </a>
     )}
   </div>
 }
