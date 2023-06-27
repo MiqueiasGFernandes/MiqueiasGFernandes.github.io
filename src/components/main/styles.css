@@ -5,6 +5,7 @@
 
 .slider_content img {
   height: 100%;
+  object-fit: cover;
 }
 
 .slider_content > div {

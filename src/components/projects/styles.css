@@ -1,5 +1,10 @@
 .img_content {
-  transition: 1s;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.img_content img {
+  width: 50;
 }
 
 .project_content:hover .img_content{

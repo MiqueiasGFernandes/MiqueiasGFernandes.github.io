@@ -73,7 +73,7 @@ const MainContent: React.FC = () => {
           {
             image: {
               src: projectImage2,
-              fit: 'none'
+              fit: 'cover'
             },
             title: 'Reserva ad',
             year: '2021',

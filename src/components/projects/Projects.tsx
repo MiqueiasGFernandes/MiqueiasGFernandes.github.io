@@ -24,8 +24,8 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           <span className='project_title text-2xl font-semibold'>{project.title}</span>
           <span className='project_year text-lg font-extrabold'>{project.year}</span>
         </div>
-        <div className="img_content shrink-0 h-full">
-          <img className={`w-full sm:h-full md:h-5/6 md:object-${project.image.fit}`} src={project.image.src} alt={`${project.title} - ${project.year}`} />
+        <div className="img_content max-h-80">
+          <img className={`md:object-${project.image.fit}`} src={project.image.src} alt={`${project.title} - ${project.year}`} />
         </div>
       </div>
     </a>
