@@ -39,6 +39,7 @@ const DemoModal: React.FC<ModalOptions> = ({ videoUrl, title, isOpen, onClose })
           style={{ width: '100%', height: '90%' }} 
           src={videoUrl}
           title={title}
+          allow="autoplay; fullscreen; picture-in-picture"
         />
       </Box>
     </Modal>

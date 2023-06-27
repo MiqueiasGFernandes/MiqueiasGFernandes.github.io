@@ -26,14 +26,14 @@ const Header: React.FC = () => {
     <DemoModal 
       isOpen={openModal === ModalsEnum.NUKE_DEMO} 
       onClose={() => setOpenModal(null)} 
-      title='Meu Vídeo' 
+      title='Nuke Demo Reel' 
       videoUrl='https://www.youtube.com/embed/ZZ5LpwO-An4'
      />
     <DemoModal 
       isOpen={openModal === ModalsEnum.AFTER_EFFECTS} 
       onClose={() => setOpenModal(null)} 
-      title='Meu Vídeo' 
-      videoUrl='https://www.youtube.com/embed/0NcPkQsKZSQ'
+      title='After Effects Demo Reel' 
+      videoUrl='https://player.vimeo.com/video/840133894?h=5b51bff9ed'
      />
   </header>
 }
